@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Reasons Why Breaking Down Bacterial Biofilm Changes More Than Just Odor - Nuora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./URO (Pink) Brand Listicle_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            /* Nuora Rosé Palette */
+            --rose-25: #FFF5F6;
+            --rose-50: #FFF1F3;
+            --rose-100: #FFE4E8;
+            --rose-200: #FECDD6;
+            --rose-300: #FEA3B4;
+            --rose-400: #FD6F8E;
+            --rose-500: #F63D68;
+            --rose-600: #E31B54;
+            --rose-700: #C01048;
+            --rose-800: #A11043;
+            --rose-900: #89123E;
+            --rose-950: #510B24;
+
+            --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Americana BT', Georgia, 'Times New Roman', serif;
+            
+            /* Semantic Mappings */
+            --color-bg-main: var(--rose-25);
+            --color-bg-alt: var(--rose-50);
+            --color-bg-accent: var(--rose-100);
+            
+            --color-text-main: var(--rose-900);
+            --color-text-body: var(--rose-800);
+            --color-primary: var(--rose-950);
+            --color-brand: var(--rose-500);
+            --color-brand-hover: var(--rose-600);
+            --color-accent: var(--rose-600); 
+            
+            /* Strict 1px Borders */
+            --border-std: 1px solid var(--rose-900);
+            --border-light: 1px solid var(--rose-300);
+            
+            --spacing-unit: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text-body);
+            background-color: var(--color-bg-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1002;
+            pointer-events: none;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: var(--color-brand);
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* Animation Classes */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--color-bg-main);
+            border-bottom: var(--border-std);
+            padding: 0.75rem 1rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sticky-header .brand {
+            font-weight: 700;
+            color: var(--rose-25);
+            text-decoration: none;
+            border: var(--border-std);
+            padding: 0.25rem 0.75rem;
+            background: var(--color-brand); 
+            transition: background 0.2s ease;
+        }
+
+        .sticky-header .brand:hover {
+            background: var(--color-brand-hover);
+        }
+
+        .sticky-header .tagline {
+            color: var(--color-text-body);
+            font-weight: 500;
+            display: none;
+        }
+
+        @media (min-width: 375px) {
+            .sticky-header .tagline {
+                display: block;
+            }
+        }
+
+        /* Layout */
+        .container {
+            max-width: 680px; 
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        main {
+            padding-top: 6rem;
+            padding-bottom: 5rem;
+        }
+
+        /* Typography - Journalistic Style */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            color: var(--color-primary);
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: var(--border-std);
+        }
+
+        /* List Numbers Styling (1., 2., 3., etc) */
+        h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: var(--border-std);
+            display: block;
+            width: 100%;
+            color: var(--color-text-main);
+            position: relative;
+        }
+        
+        h2 span.number-highlight {
+             font-size: 3rem;
+             color: var(--color-brand);
+             margin-right: 0.5rem;
+             vertical-align: middle;
+             line-height: 0;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--color-text-body);
+            text-align: left;
+        }
+
+        /* Drop Cap */
+        .drop-cap-p::first-letter {
+            float: left;
+            font-family: var(--font-serif);
+            font-size: 4.5rem;
+            line-height: 0.85;
+            padding-top: 0.1em;
+            padding-right: 0.15em;
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--color-primary);
+            /* Animated highlighter effect */
+            background: linear-gradient(180deg, transparent 65%, var(--rose-200) 65%);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.8s ease 0.2s;
+        }
+        
+        .is-visible strong {
+            background-size: 100% 100%;
+        }
+        
+        em {
+            font-style: italic;
+            color: var(--color-text-main);
+            font-family: var(--font-serif);
+            position: relative;
+            padding: 0 4px;
+        }
+
+        p em {
+            display: inline-block;
+            background: rgba(254, 205, 214, 0.25); /* Rose-200 with opacity */
+        }
+
+        /* Byline */
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem 0;
+            border-bottom: var(--border-std);
+            border-top: var(--border-std);
+            margin-top: 2rem;
+        }
+
+        .author-info h4 {
+            font-family: var(--font-sans);
+            margin: 0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--color-primary);
+            letter-spacing: 0.05em;
+        }
+
+        .author-credentials {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            color: var(--color-text-body);
+            line-height: 1.5;
+            margin-top: 0.5rem;
+        }
+
+        /* Visuals & Patterns */
+        .visual-container {
+            margin: 3.5rem 0;
+            border: var(--border-std);
+            background: #fff;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* CSS Patterns for placeholders */
+        .pattern-dots {
+            background-color: var(--color-bg-alt);
+            background-image: radial-gradient(var(--rose-800) 1px, transparent 1px);
+            background-size: 10px 10px;
+        }
+        
+        .pattern-lines {
+            background-color: #fff;
+            background-image: repeating-linear-gradient(45deg, var(--rose-100) 0, var(--rose-100) 1px, transparent 0, transparent 50%);
+            background-size: 10px 10px;
+        }
+        
+        .pattern-grid {
+            background-color: #fff;
+            background-image: linear-gradient(var(--rose-200) 1px, transparent 1px), linear-gradient(90deg, var(--rose-200) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .split-screen {
+            display: flex;
+            flex-direction: column;
+            min-height: 320px;
+        }
+
+        @media (min-width: 600px) {
+            .split-screen {
+                flex-direction: row;
+                min-height: 300px;
+            }
+        }
+
+        .split-half {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        @media (min-width: 600px) {
+            .split-half:first-child {
+                border-right: var(--border-std);
+            }
+        }
+        @media (max-width: 599px) {
+            .split-half:first-child {
+                border-bottom: var(--border-std);
+            }
+        }
+        
+        .bg-light { background: var(--color-bg-alt); }
+        .bg-dark { background: var(--color-primary); color: var(--color-bg-main); }
+        .bg-accent { background: var(--color-bg-accent); } 
+
+        .img-label {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 700;
+            color: inherit;
+            background: #fff;
+            padding: 4px 8px;
+            border: var(--border-std);
+            box-shadow: 2px 2px 0 var(--color-primary); 
+        }
+        
+        .bg-dark .img-label {
+            background: var(--color-primary);
+            color: var(--color-bg-main);
+            border: 1px solid var(--color-bg-main);
+            box-shadow: 2px 2px 0 var(--color-bg-main);
+        }
+
+        /* Buttons */
+        .cta-wrapper {
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: var(--color-brand);
+            color: #fff; /* White text for contrast on Rose-500 */
+            border: var(--border-std);
+            padding: 1.25rem;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .btn:hover {
+            background-color: var(--color-brand-hover);
+            color: #fff;
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0 var(--rose-900);
+        }
+
+        /* Content Boxes */
+        .biofilm-box {
+            background: #fff;
+            border: var(--border-std);
+            padding: 3rem;
+            margin: 5rem 0;
+            position: relative;
+        }
+        
+        .biofilm-box::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: -6px;
+            bottom: -6px;
+            border: var(--border-std);
+            z-index: -1;
+            background: var(--color-bg-alt);
+        }
+
+        .biofilm-box h3 {
+            font-size: 2rem;
+            border-bottom: var(--border-std);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .urgent-box {
+            background: #fff;
+            border: var(--border-std);
+            padding: 3rem;
+            margin: 5rem 0;
+            position: relative;
+            outline: 2px solid var(--color-primary);
+            outline-offset: 6px;
+        }
+        
+        .urgent-box h1 {
+            color: var(--color-primary);
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            border-bottom: var(--border-std);
+            padding-bottom: 1rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .urgent-box .btn {
+            background-color: var(--color-primary);
+            color: var(--color-bg-main);
+            border: var(--border-std);
+        }
+        
+        .urgent-box .btn:hover {
+            background-color: #fff;
+            color: var(--color-primary);
+            box-shadow: 4px 4px 0 var(--color-primary);
+        }
+
+        /* Graph */
+        .graph-viz {
+            height: 280px;
+            background: #fff;
+            position: relative;
+            padding: 40px;
+            border-bottom: var(--border-std);
+        }
+        
+        .graph-label {
+            position: absolute;
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            padding: 6px 10px;
+            border: var(--border-std);
+            background: var(--color-bg-main);
+            color: var(--color-primary);
+            z-index: 10;
+            font-weight: 700;
+        }
+        
+        /* SVG Animation */
+        .graph-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: stroke-dashoffset 1.5s ease-out;
+        }
+        
+        .is-visible .graph-line {
+            stroke-dashoffset: 0;
+        }
+
+        /* Utilities */
+        hr {
+            border: 0;
+            height: 0;
+            border-top: var(--border-std);
+            margin: 5rem 0;
+            position: relative;
+        }
+        
+        hr::after {
+            content: '♦';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--color-bg-main);
+            padding: 0 1rem;
+            color: var(--color-primary);
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 6rem;
+            padding: 4rem 0;
+            border-top: var(--border-std);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            color: var(--color-text-body);
+            text-align: center;
+            background: var(--color-bg-alt);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="readingProgress" style="width: 0%;"></div>
+    </div>
+
+    <nav class="sticky-header">
+        <span class="tagline">feel confident about your vaginal health</span>
+        <a href="file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html#" class="brand">visit nuora</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- Hero Visual: Split Screen -->
+        <div class="visual-container split-screen reveal-on-scroll is-visible">
+            <div class="split-half bg-light pattern-dots">
+                <div style="position: relative; z-index: 2;">
+                    <div style="font-size: 6rem; color: var(--color-accent); transform: rotate(45deg); line-height: 1; transition: transform 1s ease;">↘</div>
+                    <p class="img-label" style="margin-top: 1rem;">Bad Bacteria<br>Under Biofilm</p>
+                </div>
+            </div>
+            <div class="split-half bg-dark pattern-lines">
+                <p class="img-label">[Collage of Happy Customers]</p>
+            </div>
+        </div>
+
+        <h1 class="reveal-on-scroll is-visible">8 Reasons Why Breaking Down Bacterial Biofilm Changes More Than Just Odor...</h1>
+
+        <div class="byline reveal-on-scroll delay-100 is-visible">
+            <div class="author-info">
+                <h4>By Dr. Alicia Darling</h4>
+                <div class="author-credentials">
+                    PhD in Microbial Ecology • Former Research Lead at Stanford Vaginal Microbiome Lab • 12+ years studying biofilm formation
+                </div>
+            </div>
+        </div>
+
+        <p class="reveal-on-scroll drop-cap-p is-visible">When I was asked to review Nuora's formulation, I wasn't sure. Like, is it just another pineapple probiotic?</p>
+        
+        <p class="reveal-on-scroll is-visible">But when I saw they actually addressed <strong>biofilm disruption</strong>, not just surface bacteria, I knew this was different.</p>
+        
+        <p class="reveal-on-scroll is-visible">I've spent over a decade researching why odor keeps coming back for some women and not others...</p>
+        
+        <p class="reveal-on-scroll is-visible"><strong>The answer is always biofilm.</strong> It's the protective layer bad bacteria build that makes them invisible to swab tests and resistant to antibiotics. And when you don't break it down first, probiotics can't do their job.</p>
+        
+        <p class="reveal-on-scroll is-visible">Here's what I've seen happen when women finally address biofilm properly:</p>
+
+        <hr class="reveal-on-scroll is-visible">
+
+        <!-- Point 1 -->
+        <div class="visual-container split-screen reveal-on-scroll is-visible">
+            <div class="split-half bg-light pattern-dots">
+                <p class="img-label">Microbiome Without Nuora</p>
+            </div>
+            <div class="split-half bg-accent pattern-grid">
+                <p class="img-label">Microbiome With Nuora</p>
+            </div>
+        </div>
+
+        <h2 class="reveal-on-scroll is-visible"><span class="number-highlight" style="font-size: 3rem; color: var(--color-brand); vertical-align: middle; margin-right: 10px;">1.</span> THE BATHROOM CHECKING STOPS</h2>
+        <p class="reveal-on-scroll is-visible">I had a client tell me she used to go to the bathroom every hour at work just to "check." Wipe and smell. Wipe and smell. Like a compulsion she couldn't control.</p>
+        <p class="reveal-on-scroll is-visible">But after addressing biofilm and allowing this probiotic to actually colonize, she said it was gone.</p>
+        <p class="reveal-on-scroll is-visible">She wasn't spiraling anymore. She could focus on relationships, on conversations, on her actual life instead of her vagina.</p>
+        <p class="reveal-on-scroll is-visible">So when your microbiome stabilizes, this feeling of relief and absolute confidence is so amazing...</p>
+
+        <!-- Point 2 -->
+        <h2 class="reveal-on-scroll is-visible"><span class="number-highlight" style="font-size: 3rem; color: var(--color-brand); vertical-align: middle; margin-right: 10px;">2.</span> INTIMACY BECOMES ABOUT CONNECTION AGAIN</h2>
+        
+        <div class="visual-container split-screen reveal-on-scroll is-visible">
+            <div class="split-half bg-light pattern-lines">
+                <p class="img-label">[Mirror Selfie: Playful]</p>
+            </div>
+            <div class="split-half bg-light pattern-dots" style="border-left: var(--border-std);">
+                <p class="img-label">[Couple Selfie: Happy]</p>
+            </div>
+        </div>
+
+        <p class="reveal-on-scroll is-visible">One of my clients told me she used to shower twice before sex with her husband. Every single time. And even then, she'd be mentally checking throughout...</p>
+        <p class="reveal-on-scroll is-visible">"Can he smell me? Is he pulling away?"</p>
+        <p class="reveal-on-scroll is-visible">But when biofilm is disrupted and good bacteria repopulate, the pH stabilizes. The smell goes away. But more importantly, the fear goes away.</p>
+        <p class="reveal-on-scroll is-visible">She told me, <em>"I stopped redirecting him when he tried to go down on me. I just let him do it... For the first time in two years."</em></p>
+        <p class="reveal-on-scroll is-visible">That's not just about odor. That's about trusting your body enough to be present with your partner.</p>
+
+        <!-- Point 3 -->
+        <h2 class="reveal-on-scroll is-visible"><span class="number-highlight" style="font-size: 3rem; color: var(--color-brand); vertical-align: middle; margin-right: 10px;">3.</span> YOUR WARDROBE STOPS BEING DICTATED BY DISCHARGE</h2>
+        
+        <div class="visual-container reveal-on-scroll pattern-grid is-visible" style="height: 350px; display: flex; align-items: center; justify-content: center;">
+            <p class="img-label" style="z-index: 2;">[Woman with Nuora Product]</p>
+        </div>
+
+        <p class="reveal-on-scroll is-visible">I've heard this from so many women: "I only wear black leggings now because I'm terrified of anything showing through."</p>
+        <p class="reveal-on-scroll is-visible">When biofilm is present, discharge is unpredictable. It changes color, texture, smell... almost like random.</p>
+        <p class="reveal-on-scroll is-visible">Because the bacteria underneath are protected and constantly releasing waste.</p>
+        <p class="reveal-on-scroll is-visible">But once biofilm breaks down and probiotics restore balance, discharge becomes predictable again. Normal. Women tell me they start wearing white pants again. Bright colors. Whatever they want.</p>
+        <p class="reveal-on-scroll is-visible">It sounds small, but it's not. It's reclaiming self-expression.</p>
+
+        <!-- Point 4 -->
+        <h2 class="reveal-on-scroll is-visible"><span class="number-highlight" style="font-size: 3rem; color: var(--color-brand); vertical-align: middle; margin-right: 10px;">4.</span> YOU STOP NEEDING VALIDATION FROM DOCTORS WHO DISMISSED YOU</h2>
+        
+        <div class="visual-container reveal-on-scroll is-visible" style="padding: 2rem; background: #fff; position: relative;">
+            <div style="position: relative; width: 100%; height: 280px;">
+                <!-- Labels -->
+                <div class="graph-label" style="top: 10%; left: 0;">
+                    2 weeks after starting nuora
+                </div>
+                <div class="graph-label" style="bottom: 15%; right: 0; background: var(--color-primary); color: var(--color-bg-main); border-color: var(--color-primary);">
+                    Quality of Life (High)
+                </div>
+                
+                <!-- SVG Graph -->
+                <svg width="100%" height="100%" viewBox="0 0 400 280" preserveAspectRatio="none" style="overflow: visible;">
+                    <!-- Axes -->
+                    <polyline points="0,0 0,280 400,280" fill="none" stroke="#89123E" stroke-width="1"></polyline>
+                    <!-- Curve: Smooth logistic growth -->
+                    <path class="graph-line" d="M 0 280 C 150 280, 180 50, 400 40" fill="none" stroke="#89123E" stroke-width="4"></path>
+                </svg>
+            </div>
+        </div>
+
+        <p class="reveal-on-scroll is-visible">This one makes me angry as a researcher. I've heard "everything looks normal" from colleagues when I know biofilm is present. Swab tests don't detect it. It's invisible to standard testing.</p>
+        <p class="reveal-on-scroll is-visible">So women are told they're fine when they know something is wrong. That disconnect is maddening.</p>
+        <p class="reveal-on-scroll is-visible">When you break down biofilm yourself and restore your microbiome, you don't need someone to validate you anymore. You know you fixed it. You trust your body again.</p>
+        <p class="reveal-on-scroll is-visible">And this feeling of trusting your own experience is the real power!</p>
+
+        <!-- Point 5 -->
+        <h2 class="reveal-on-scroll is-visible"><span class="number-highlight" style="font-size: 3rem; color: var(--color-brand); vertical-align: middle; margin-right: 10px;">5.</span> YOU STOP THINKING ABOUT YOUR VAGINA 24/7</h2>
+        
+        <div class="visual-container reveal-on-scroll pattern-dots is-visible" style="height: 350px; display: flex; align-items: center; justify-content: center;">
+            <p class="img-label" style="z-index: 2;">[Selfie: Carefree &amp; Smiling]</p>
+        </div>
+
+        <p class="reveal-on-scroll is-visible">I ask every patient: "How often do you think about your vaginal health in a day?"</p>
+        <p class="reveal-on-scroll is-visible">Before addressing biofilm, the answer is always some version of "constantly." Carrying extra underwear. Checking smell. Googling at 2am. Panicking when discharge changes color.</p>
+        <p class="reveal-on-scroll is-visible">But after biofilm disruption and microbiome restoration, they tell me, "I forget about it now. In a good way."</p>
+        <p class="reveal-on-scroll is-visible">That's the goal. Not thinking about your vagina has to feel like freedom. It means you feel normal again. Like you used to.</p>
+
+        <div class="cta-wrapper reveal-on-scroll is-visible">
+            <a href="file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html#" class="btn">Visit Nuora &amp; Claim Discount</a>
+        </div>
+
+        <!-- The Biofilm Difference -->
+        <div class="biofilm-box reveal-on-scroll is-visible">
+            <h3>The Biofilm Difference</h3>
+            <p>Here's what I want you to understand: most vaginal probiotics fail because they're fighting an invisible enemy. <strong>Biofilm protects bad bacteria like a shield.</strong></p>
+            <p>Probiotics bounce off. Antibiotics can't penetrate. Even your immune system can't reach them.</p>
+            <p>That's why you can take probiotics for months and still have recurring issues. You're not addressing the root cause.</p>
+            <p>Pineapple enzymes (specifically bromelain) are one of the few natural compounds clinically shown to disrupt biofilm structure. When you combine that with spore-forming probiotics like <em>Bacillus coagulans</em> (which actually survive stomach acid) and vitamin C (which maintains acidic pH), you're finally attacking the problem from all angles.</p>
+            <p>I reviewed Nuora because it's the first formulation I've seen that understands this mechanism. It's not just throwing probiotics at the problem. It's breaking down the barrier first.</p>
+            <p>And when women finally do that, everything I described above becomes possible.</p>
+            
+            <div class="cta-wrapper">
+                <a href="file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html#" class="btn">Visit Nuora &amp; Claim Discount</a>
+            </div>
+        </div>
+
+        <!-- Urgent Update -->
+        <div class="urgent-box reveal-on-scroll is-visible">
+            <h1>Urgent Update</h1>
+            <p>I hate being the person who mentions stock issues—it sounds like a sales tactic. But I've had three clients text me this month saying they tried to order and it was sold out.</p>
+            <p>The issue is Nuora is from European founders. They only recently started shipping from New Jersey. Their quality standards are higher than most US supplement brands (which is why I trust them), but it also means they can't just scale production overnight.</p>
+            <p>Every batch has to meet EU testing before it ships. So when demand spiked after the formulation started circulating in research communities, their supply chain couldn't keep up.</p>
+            <p>I'm not saying this to pressure you. I'm saying it because if you decide this is worth trying, check if it's in stock first. I'd rather you know now than get frustrated later.</p>
+            <p><em>P.S. As long as you are able to click the 'Add to cart' button, it means they are in stock.</em></p>
+            
+            <div class="cta-wrapper">
+                <a href="file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html#" class="btn">Visit Nuora &amp; Claim Discount</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="reveal-on-scroll is-visible">
+            <p><strong>Dr. Alicia Darling</strong><br>
+            PhD, Microbial Ecology<br>
+            Stanford Vaginal Microbiome Research Lab (2011-2023)</p>
+            <br>
+            <p>© 2025 Nuora.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('readingProgress').style.width = scrollPercent + '%';
+        });
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const elements = document.querySelectorAll('.reveal-on-scroll');
+            elements.forEach(el => observer.observe(el));
+            
+            // Script to wrap numbers in H2s for styling (Visual only, no content change)
+            document.querySelectorAll('h2').forEach(h2 => {
+               const text = h2.innerText;
+               const match = text.match(/^(\d+\.)\s+(.*)/);
+               if (match) {
+                   // Wrap the number in a span for styling
+                   h2.innerHTML = `<span class="number-highlight" style="font-size: 3rem; color: var(--color-brand); vertical-align: middle; margin-right: 10px;">${match[1]}</span> ${match[2]}`;
+               }
+            });
+        });
+    </script>
+
+
+
+</body></html>
