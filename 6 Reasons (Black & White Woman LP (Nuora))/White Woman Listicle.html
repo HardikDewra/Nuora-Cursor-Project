@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Reasons Why You Should Make the Switch to Nuora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Brand Listicle - V3_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            /* Nuora Brand Palette */
+            --yellow-25: #FEFDF0;
+            --yellow-50: #FEFBE8;
+            --yellow-100: #FEF7C3;
+            --yellow-200: #FDE272;
+            --yellow-300: #FDE272;
+            --yellow-400: #FAC515;
+            --yellow-500: #EAAA08;
+            --yellow-600: #CA8504;
+
+            --brown-800: #854A0E;
+            --brown-900: #713B12;
+            --brown-950: #542C0D;
+
+            --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Americana BT', Georgia, 'Times New Roman', serif;
+            
+            --color-text-main: var(--brown-800);
+            --color-primary: var(--brown-900);
+            --color-accent: var(--yellow-600); 
+            
+            /* Strict 1px Borders */
+            --border-std: 1px solid var(--brown-900);
+            --border-light: 1px solid var(--yellow-200);
+            
+            --spacing-unit: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text-main);
+            background-color: var(--yellow-25);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1002;
+            pointer-events: none;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: var(--yellow-400);
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* Animation Classes */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--yellow-25);
+            border-bottom: var(--border-std);
+            padding: 0.75rem 1rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sticky-header .brand {
+            font-weight: 700;
+            color: var(--brown-950);
+            text-decoration: none;
+            border: var(--border-std);
+            padding: 0.25rem 0.75rem;
+            background: var(--yellow-400); 
+            transition: background 0.2s ease;
+        }
+
+        .sticky-header .brand:hover {
+            background: var(--yellow-500);
+        }
+
+        .sticky-header .tagline {
+            color: var(--brown-800);
+            font-weight: 500;
+            display: none;
+        }
+
+        @media (min-width: 375px) {
+            .sticky-header .tagline {
+                display: block;
+                max-width: 50%;
+            }
+        }
+
+        /* Layout */
+        .container {
+            max-width: 680px; 
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        main {
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+        }
+
+        /* Typography - Journalistic Style */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            color: var(--brown-950);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-top: 0rem;
+            padding-bottom: 0rem;
+            border-bottom: none;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        /* List Numbers Styling (1., 2., 3., etc) */
+        h2 {
+            font-size: 1.7rem;
+            text-transform: capitalize;
+            letter-spacing: -0.01em;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: var(--border-std);
+            display: block;
+            width: 100%;
+            color: var(--brown-900);
+            position: relative;
+        }
+        
+        /* Pseudo-element for large decorative number behind or beside */
+        /* Since copy is "1. The Bathroom...", we can't easily replace the text without JS or wrapping.
+           Visual trick: We style the first character using JS span wrapping or just typography 
+           Since I cannot change the copy, I will use a simple visual trick:
+           Make the H2 nice and big, and use a marker if it was a list item.
+           But here it is text content. I will leave it as styled text but enhance the surrounding whitespace. 
+        */
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--brown-800);
+            text-align: left;
+        }
+
+        /* Drop Cap */
+        .drop-cap-p::first-letter {
+            float: left;
+            font-family: var(--font-serif);
+            font-size: 4.5rem;
+            line-height: 0.85;
+            padding-top: 0.1em;
+            padding-right: 0.15em;
+            color: var(--brown-950);
+            font-weight: 700;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--brown-950);
+            /* Animated highlighter effect */
+            background: linear-gradient(180deg, transparent 65%, var(--yellow-200) 65%);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.8s ease 0.2s;
+        }
+        
+        .is-visible strong {
+            background-size: 100% 100%;
+        }
+        
+        em {
+            font-style: italic;
+            color: var(--brown-900);
+            font-family: var(--font-serif);
+            position: relative;
+            padding: 0 4px;
+        }
+
+        /* Blockquote style for italic text */
+        p em {
+            display: inline-block;
+            background: rgba(253, 226, 114, 0.2); /* very subtle highlight */
+        }
+
+        /* Byline */
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem 0;
+            border-bottom: var(--border-std);
+            border-top: var(--border-std); /* Double border effect */
+            margin-top: 2rem;
+        }
+
+        .author-info h4 {
+            font-family: var(--font-sans);
+            margin: 0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--brown-950);
+            letter-spacing: 0.05em;
+        }
+
+        .author-credentials {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            color: var(--brown-800);
+            line-height: 1.5;
+            margin-top: 0.5rem;
+        }
+
+        /* Visuals & Patterns */
+        .visual-container {
+            margin: 1.5rem 0;
+            border: var(--border-std);
+            background: #fff;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* CSS Patterns for placeholders */
+        .pattern-dots {
+            background-color: var(--yellow-50);
+            background-image: radial-gradient(var(--brown-800) 1px, transparent 1px);
+            background-size: 10px 10px;
+        }
+        
+        .pattern-lines {
+            background-color: #fff;
+            background-image: repeating-linear-gradient(45deg, var(--yellow-100) 0, var(--yellow-100) 1px, transparent 0, transparent 50%);
+            background-size: 10px 10px;
+        }
+        
+        .pattern-grid {
+            background-color: #fff;
+            background-image: linear-gradient(var(--yellow-200) 1px, transparent 1px), linear-gradient(90deg, var(--yellow-200) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .split-screen {
+            display: flex;
+            flex-direction: column;
+            min-height: 320px;
+        }
+
+        @media (min-width: 600px) {
+            .split-screen {
+                flex-direction: row;
+                min-height: 300px;
+            }
+        }
+
+        .split-half {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        @media (min-width: 600px) {
+            .split-half:first-child {
+                border-right: var(--border-std);
+            }
+        }
+        @media (max-width: 599px) {
+            .split-half:first-child {
+                border-bottom: var(--border-std);
+            }
+        }
+        
+        .bg-light { background: var(--yellow-50); }
+        .bg-dark { background: var(--brown-950); color: var(--yellow-25); }
+        .bg-accent { background: var(--yellow-100); } 
+
+        .img-label {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 700;
+            color: inherit;
+            background: #fff;
+            padding: 4px 8px;
+            border: var(--border-std);
+            box-shadow: 2px 2px 0 var(--brown-950); /* Tiny hard shadow for labels only to pop */
+        }
+        
+        .bg-dark .img-label {
+            background: var(--brown-950);
+            color: var(--yellow-50);
+            border: 1px solid var(--yellow-50);
+            box-shadow: 2px 2px 0 var(--yellow-50);
+        }
+
+        /* Buttons */
+        .cta-wrapper {
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: var(--yellow-400);
+            color: var(--brown-950);
+            border: var(--border-std);
+            padding: 1.25rem;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .btn:hover {
+            background-color: var(--brown-950);
+            color: var(--yellow-400);
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0 var(--yellow-600);
+        }
+
+        /* Content Boxes */
+        .biofilm-box {
+            background: #fff;
+            border: var(--border-std);
+            padding: 3rem;
+            margin: 5rem 0;
+            position: relative;
+        }
+        
+        .biofilm-box::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: -6px;
+            bottom: -6px;
+            border: var(--border-std);
+            z-index: -1;
+            background: var(--yellow-50);
+        }
+
+        .biofilm-box h3 {
+            font-size: 2rem;
+            border-bottom: var(--border-std);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .urgent-box {
+            background: #fff;
+            border: var(--border-std);
+            padding: 3rem;
+            margin: 5rem 0;
+            position: relative;
+            outline: 2px solid var(--brown-950);
+            outline-offset: 6px;
+        }
+        
+        .urgent-box h1 {
+            color: var(--brown-950);
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            border-bottom: var(--border-std);
+            padding-bottom: 1rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .urgent-box .btn {
+            background-color: var(--brown-950);
+            color: var(--yellow-25);
+            border: var(--border-std);
+        }
+        
+        .urgent-box .btn:hover {
+            background-color: #fff;
+            color: var(--brown-950);
+            box-shadow: 4px 4px 0 var(--brown-950);
+        }
+
+        /* Graph */
+        .graph-viz {
+            height: 280px;
+            background: #fff;
+            position: relative;
+            padding: 40px;
+            border-bottom: var(--border-std);
+        }
+        
+        .graph-label {
+            position: absolute;
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            padding: 6px 10px;
+            border: var(--border-std);
+            background: var(--yellow-25);
+            color: var(--brown-950);
+            z-index: 10;
+            font-weight: 700;
+        }
+        
+        /* SVG Animation */
+        .graph-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: stroke-dashoffset 1.5s ease-out;
+        }
+        
+        .is-visible .graph-line {
+            stroke-dashoffset: 0;
+        }
+
+        /* Utilities */
+        hr {
+            border: 0;
+            height: 0;
+            border-top: var(--border-std);
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        hr::after {
+            content: '♦';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--yellow-25);
+            padding: 0 1rem;
+            color: var(--brown-900);
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 6rem;
+            padding: 4rem 0;
+            border-top: var(--border-std);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            color: var(--brown-800);
+            text-align: center;
+            background: var(--yellow-50);
+        }
+        
+        /* List Number Highlight Span (Dynamically added or just styling H2) */
+        h2 span.number-highlight {
+             font-size: 1.7rem;
+             color: var(--yellow-600);
+             margin-right: 0.5rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="readingProgress" style="width: 0%;"></div>
+    </div>
+
+    <nav class="sticky-header">
+        <span class="tagline">feel confident about your vaginal health</span>
+        <a href="https://mynuora.com/products/feminine-balance-gummies-1" class="brand">Try Nuora</a>
+    </nav>
+
+    <main class="container">
+
+        <h1 class="reveal-on-scroll is-visible">6 Reasons Why You Should Make the Switch to Nuora</h1>
+
+        <!-- Hero Visual -->
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/first image.webp" alt="Nuora Hero" style="width: 100%; display: block;">
+        </div>
+
+        <p class="reveal-on-scroll is-visible">Something's off down there. The smell, discharge and constant checking. You've tried things and they work for a bit but then it comes back.</p>
+        
+        <p class="reveal-on-scroll is-visible">Here's why that keeps happening and what actually fixes it.</p>
+
+        <hr class="reveal-on-scroll is-visible">
+
+        <!-- Image before Point 1 -->
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+             <img src="./images/asfdass.webp" alt="Black Women Listicle" style="width: 100%; display: block;">
+        </div>
+
+        <h2 class="reveal-on-scroll is-visible" style="border-top: none; margin-top: 1.5rem; padding-top: 0;">1. Nuora Goes After What's Actually Causing It</h2>
+        <p class="reveal-on-scroll is-visible">There's a reason antibiotics and probiotics only work for a few weeks.</p>
+        <p class="reveal-on-scroll is-visible">Bad bacteria build a sticky layer around themselves called biofilms and that's what's protecting the odor causing bacteria. Nuora has a pineapple enzyme that breaks this layer down so everything else can actually work.</p>
+
+        <!-- Point 2 -->
+        <h2 class="reveal-on-scroll is-visible">2. The Probiotics Actually Get There Alive</h2>
+        
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/Image_9_Var_2.webp" alt="Visual for point 2" style="width: 100%; display: block;">
+        </div>
+
+        <p class="reveal-on-scroll is-visible">Most probiotics die in stomach acid. So it doesn't matter what the bottle says because if they're dead before they arrive, nothing changes.</p>
+        <p class="reveal-on-scroll is-visible">Nuora uses a strain with a protective shell called Baccillus Coagulans that survives the trip. In studies, women stayed balanced without crashing back.</p>
+
+        <!-- Point 3 -->
+        <h2 class="reveal-on-scroll is-visible">3. Your Body Starts Handling It On Its Own</h2>
+        
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/Image_05.webp" alt="Visual for point 3" style="width: 100%; display: block;">
+        </div>
+
+        <p class="reveal-on-scroll is-visible">Healthy pH sits between 3.8 and 4.5. When it rises, odor follows.</p>
+        <p class="reveal-on-scroll is-visible">Once the good bacteria from Nuora colonize, they produce lactic acid on their own. pH stays where it should so you can stop managing it because your body just does it.</p>
+
+        <!-- Point 4 -->
+        <h2 class="reveal-on-scroll is-visible">4. Nuora Holds Up When Things Try to Knock It Off</h2>
+        
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/Image_07.webp" alt="Visual for point 4" style="width: 100%; display: block;">
+        </div>
+
+        <p class="reveal-on-scroll is-visible">Sex, periods and stress shifts pH.</p>
+        <p class="reveal-on-scroll is-visible">Nuora builds enough good bacteria that balance holds even when life happens. So you're not starting over every few weeks.</p>
+        
+        <!-- Point 5 -->
+        <h2 class="reveal-on-scroll is-visible">5. Two Gummies. That's the Whole Routine.</h2>
+        
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/asdfasd.webp" alt="Visual for point 5" style="width: 100%; display: block;">
+        </div>
+
+        <p class="reveal-on-scroll is-visible">No suppositories, wipes or creams.</p>
+        <p class="reveal-on-scroll is-visible">The vagina cleans itself, it just needs the right support from the inside.</p>
+
+        <!-- Point 6 -->
+        <h2 class="reveal-on-scroll is-visible">6. Built by Gynecologists Who Kept Seeing the Same Thing</h2>
+        <p class="reveal-on-scroll is-visible">Women coming back every few weeks with the same problem of antibiotics and the same temporary fix.</p>
+        <p class="reveal-on-scroll is-visible">We looked into the research on biofilms and realized nothing was designed to break through them. So we built something that does.</p>
+        
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/Frame 218336054.webp" alt="Visual for point 6" style="width: 100%; display: block;">
+        </div>
+
+        <!-- Closing / CTA -->
+        <div class="biofilm-box reveal-on-scroll is-visible">
+            <h3>Ready to Stop the Cycle?</h3>
+            <p>Try Nuora for 60 days. If it doesn't work, send back the empty bag for a full refund.</p>
+            <div class="cta-wrapper">
+                <a href="https://mynuora.com/products/feminine-balance-gummies-1" class="btn">Try Nuora</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="reveal-on-scroll is-visible">
+            <p>© 2025 Nuora.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('readingProgress').style.width = scrollPercent + '%';
+        });
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const elements = document.querySelectorAll('.reveal-on-scroll');
+            elements.forEach(el => observer.observe(el));
+            
+            // Script to wrap numbers in H2s for styling (Visual only, no content change)
+            document.querySelectorAll('h2').forEach(h2 => {
+               const text = h2.innerText;
+               const match = text.match(/^(\d+\.)\s+(.*)/);
+               if (match) {
+                   // Wrap the number in a span for styling
+                   h2.innerHTML = `<span class="number-highlight">${match[1]}</span> ${match[2]}`;
+               }
+            });
+        });
+    </script>
+
+
+
+</body></html>
