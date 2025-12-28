@@ -30,6 +30,7 @@
             --color-primary: var(--brown-900);
             --color-accent: var(--yellow-600); 
             --color-button: #f8a677;
+            --color-bg-main: #fef8f5;
             
             /* Strict 1px Borders */
             --border-std: 1px solid var(--brown-900);
@@ -51,7 +52,7 @@
         body {
             font-family: var(--font-sans);
             color: var(--color-text-main);
-            background-color: var(--yellow-25);
+            background-color: var(--color-bg-main);
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
@@ -71,7 +72,7 @@
         
         .progress-bar {
             height: 100%;
-            background: var(--yellow-400);
+            background: var(--color-button);
             width: 0%;
             transition: width 0.1s linear;
         }
@@ -98,7 +99,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: var(--yellow-25);
+            background: var(--color-bg-main);
             border-bottom: var(--border-std);
             padding: 0.75rem 1rem;
             z-index: 1000;
@@ -163,7 +164,7 @@
 
         h1 {
             font-size: 2.3rem;
-            margin-top: 0rem;
+            margin-top: 1rem;
             padding-bottom: 0rem;
             border-bottom: none;
             margin-bottom: 1rem;
@@ -177,6 +178,7 @@
             text-transform: capitalize;
             letter-spacing: -0.01em;
             margin-top: 1rem;
+            margin-bottom: 0.5rem;
             padding-top: 0;
             border-top: none;
             display: block;
@@ -194,11 +196,12 @@
         */
 
         p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-size: 16px;
             font-weight: 400;
             color: var(--brown-800);
             text-align: left;
+            line-height: 1.6;
         }
 
         /* Drop Cap */
@@ -512,7 +515,7 @@
             font-size: 0.9rem;
             color: var(--brown-800);
             text-align: center;
-            background: var(--yellow-50);
+            background: var(--color-bg-main);
         }
         
         /* List Number Highlight Span (Dynamically added or just styling H2) */
@@ -547,7 +550,7 @@
              <img src="./images/white-woman-listicle-image-1.png?v=2" alt="Black Women Listicle" style="width: 100%; display: block;">
         </div>
 
-        <h2 class="reveal-on-scroll is-visible" style="border-top: none; margin-top: 1.5rem; padding-top: 0;">1. Nuora Goes After What's Actually Causing It</h2>
+        <h2 class="reveal-on-scroll is-visible">1. Nuora Goes After What's Actually Causing It</h2>
         <p class="reveal-on-scroll is-visible">There's a reason antibiotics and probiotics only work for a few weeks.</p>
         <p class="reveal-on-scroll is-visible">Bad bacteria build a sticky layer around themselves called biofilms and that's what's protecting the odor causing bacteria. Nuora has a pineapple enzyme that breaks this layer down so everything else can actually work.</p>
 
