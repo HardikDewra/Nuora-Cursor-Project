@@ -166,6 +166,7 @@
             border-bottom: none;
             margin-bottom: 1rem;
             line-height: 1.2;
+            text-align: center;
         }
 
         /* List Numbers Styling (1., 2., 3., etc) */
@@ -173,9 +174,9 @@
             font-size: 1.7rem;
             text-transform: capitalize;
             letter-spacing: -0.01em;
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: var(--border-std);
+            margin-top: 1rem;
+            padding-top: 0;
+            border-top: none;
             display: block;
             width: 100%;
             color: var(--brown-900);
@@ -192,7 +193,7 @@
 
         p {
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            font-size: 16px;
             font-weight: 400;
             color: var(--brown-800);
             text-align: left;
@@ -271,10 +272,11 @@
         /* Visuals & Patterns */
         .visual-container {
             margin: 1.5rem 0;
-            border: var(--border-std);
+            border: none;
             background: #fff;
             overflow: hidden;
             position: relative;
+            border-radius: 8px;
         }
         
         /* CSS Patterns for placeholders */
@@ -481,9 +483,10 @@
         hr {
             border: 0;
             height: 0;
-            border-top: var(--border-std);
+            border-top: none;
             margin: 2rem 0;
             position: relative;
+            display: none;
         }
         
         hr::after {
@@ -530,24 +533,20 @@
         <a href="https://mynuora.com/products/feminine-balance-gummies-1" class="brand">Try Nuora</a>
     </nav>
 
+    <div style="background-color: var(--brown-900); color: var(--yellow-25); text-align: center; padding: 10px; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; font-family: var(--font-sans); letter-spacing: 0.05em; border-bottom: 1px solid var(--yellow-25);">
+        SAVE UP TO 30% THIS WEEKEND ONLY
+    </div>
+
     <main class="container">
 
         <h1 class="reveal-on-scroll is-visible">6 Reasons Why You Should Make the Switch to Nuora</h1>
 
-        <!-- Hero Visual -->
-        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-            <img src="./images/first image.webp" alt="Nuora Hero" style="width: 100%; display: block;">
-        </div>
-
         <p class="reveal-on-scroll is-visible">Something's off down there. The smell, discharge and constant checking. You've tried things and they work for a bit but then it comes back.</p>
-        
         <p class="reveal-on-scroll is-visible">Here's why that keeps happening and what actually fixes it.</p>
-
-        <hr class="reveal-on-scroll is-visible">
 
         <!-- Image before Point 1 -->
         <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-             <img src="./images/asfdass.webp" alt="Black Women Listicle" style="width: 100%; display: block;">
+             <img src="./images/white-woman-listicle-image-1.png" alt="Black Women Listicle" style="width: 100%; display: block;">
         </div>
 
         <h2 class="reveal-on-scroll is-visible" style="border-top: none; margin-top: 1.5rem; padding-top: 0;">1. Nuora Goes After What's Actually Causing It</h2>
@@ -555,53 +554,53 @@
         <p class="reveal-on-scroll is-visible">Bad bacteria build a sticky layer around themselves called biofilms and that's what's protecting the odor causing bacteria. Nuora has a pineapple enzyme that breaks this layer down so everything else can actually work.</p>
 
         <!-- Point 2 -->
-        <h2 class="reveal-on-scroll is-visible">2. The Probiotics Actually Get There Alive</h2>
-        
         <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-            <img src="./images/Image_9_Var_2.webp" alt="Visual for point 2" style="width: 100%; display: block;">
+            <img src="./images/point-2-image.png" alt="Visual for point 2" style="width: 100%; display: block;">
         </div>
 
+        <h2 class="reveal-on-scroll is-visible">2. The Probiotics Actually Get There Alive</h2>
+        
         <p class="reveal-on-scroll is-visible">Most probiotics die in stomach acid. So it doesn't matter what the bottle says because if they're dead before they arrive, nothing changes.</p>
         <p class="reveal-on-scroll is-visible">Nuora uses a strain with a protective shell called Baccillus Coagulans that survives the trip. In studies, women stayed balanced without crashing back.</p>
 
         <!-- Point 3 -->
-        <h2 class="reveal-on-scroll is-visible">3. Your Body Starts Handling It On Its Own</h2>
-        
         <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-            <img src="./images/Image_05.webp" alt="Visual for point 3" style="width: 100%; display: block;">
+            <img src="./images/point-3-image.png" alt="Visual for point 3" style="width: 100%; display: block;">
         </div>
 
+        <h2 class="reveal-on-scroll is-visible">3. Your Body Starts Handling It On Its Own</h2>
+        
         <p class="reveal-on-scroll is-visible">Healthy pH sits between 3.8 and 4.5. When it rises, odor follows.</p>
         <p class="reveal-on-scroll is-visible">Once the good bacteria from Nuora colonize, they produce lactic acid on their own. pH stays where it should so you can stop managing it because your body just does it.</p>
 
         <!-- Point 4 -->
-        <h2 class="reveal-on-scroll is-visible">4. Nuora Holds Up When Things Try to Knock It Off</h2>
-        
         <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-            <img src="./images/Image_07.webp" alt="Visual for point 4" style="width: 100%; display: block;">
+            <img src="./images/point-4-image.png" alt="Visual for point 4" style="width: 100%; display: block;">
         </div>
 
+        <h2 class="reveal-on-scroll is-visible">4. Nuora Holds Up When Things Try to Knock It Off</h2>
+        
         <p class="reveal-on-scroll is-visible">Sex, periods and stress shifts pH.</p>
         <p class="reveal-on-scroll is-visible">Nuora builds enough good bacteria that balance holds even when life happens. So you're not starting over every few weeks.</p>
         
         <!-- Point 5 -->
-        <h2 class="reveal-on-scroll is-visible">5. Two Gummies. That's the Whole Routine.</h2>
-        
         <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-            <img src="./images/asdfasd.webp" alt="Visual for point 5" style="width: 100%; display: block;">
+            <img src="./images/point-5-image-new.png" alt="Visual for point 5" style="width: 100%; display: block;">
         </div>
 
+        <h2 class="reveal-on-scroll is-visible">5. Two Gummies. That's the Whole Routine.</h2>
+        
         <p class="reveal-on-scroll is-visible">No suppositories, wipes or creams.</p>
         <p class="reveal-on-scroll is-visible">The vagina cleans itself, it just needs the right support from the inside.</p>
 
         <!-- Point 6 -->
+        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
+            <img src="./images/grace-mitchell.png" alt="Visual for point 6" style="width: 100%; display: block;">
+        </div>
+
         <h2 class="reveal-on-scroll is-visible">6. Built by Gynecologists Who Kept Seeing the Same Thing</h2>
         <p class="reveal-on-scroll is-visible">Women coming back every few weeks with the same problem of antibiotics and the same temporary fix.</p>
         <p class="reveal-on-scroll is-visible">We looked into the research on biofilms and realized nothing was designed to break through them. So we built something that does.</p>
-        
-        <div class="visual-container reveal-on-scroll is-visible" style="border: none; background: transparent;">
-            <img src="./images/Frame 218336054.webp" alt="Visual for point 6" style="width: 100%; display: block;">
-        </div>
 
         <!-- Closing / CTA -->
         <div class="biofilm-box reveal-on-scroll is-visible">
