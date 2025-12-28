@@ -385,10 +385,7 @@
         }
         
         .btn:hover {
-            background-color: var(--brown-950);
-            color: var(--color-button);
-            transform: translate(-2px, -2px);
-            box-shadow: 4px 4px 0 var(--color-button);
+            /* Hover effects removed */
         }
 
         /* Content Boxes */
@@ -447,9 +444,7 @@
         }
         
         .urgent-box .btn:hover {
-            background-color: #fff;
-            color: var(--brown-950);
-            box-shadow: 4px 4px 0 var(--brown-950);
+            /* Hover effects removed */
         }
 
         /* Graph */
@@ -511,7 +506,7 @@
         footer {
             margin-top: 6rem;
             padding: 4rem 0;
-            border-top: var(--border-std);
+            /* border-top: var(--border-std); Removed border */
             font-family: var(--font-sans);
             font-size: 0.9rem;
             color: var(--brown-800);
@@ -519,10 +514,14 @@
             background: var(--color-bg-main);
         }
         
+        footer p {
+            text-align: center;
+        }
+        
         /* List Number Highlight Span (Dynamically added or just styling H2) */
         h2 span.number-highlight {
              font-size: 1.7rem;
-             color: var(--yellow-600);
+             color: #F58342;
              margin-right: 0.5rem;
         }
 
