@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)file:///Users/hardikdewra/Documents/Cursor%20Projects/Nuora%20Biofilm%20LP/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Reasons Women With Copper IUDs Are Making this Switch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="../Brand Listicle - V3_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            /* Nuora Brand Palette */
+            --yellow-25: #FEFDF0;
+            --yellow-50: #FEFBE8;
+            --yellow-100: #FEF7C3;
+            --yellow-200: #FDE272;
+            --yellow-300: #FDE272;
+            --yellow-400: #FAC515;
+            --yellow-500: #EAAA08;
+            --yellow-600: #CA8504;
+            
+            --brown-800: #854A0E;
+            --brown-900: #713B12;
+            --brown-950: #542C0D;
+            
+            --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --font-serif: 'Americana BT', Georgia, 'Times New Roman', serif;
+            
+            --color-text-main: var(--brown-800);
+            --color-primary: var(--brown-900);
+            --color-accent: var(--yellow-600); 
+            --color-button: #f8a677;
+            --color-bg-main: #FFFFFF;
+            
+            /* Strict 1px Borders */
+            --border-std: 1px solid var(--brown-900);
+            --border-light: 1px solid var(--yellow-200);
+            
+            --spacing-unit: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text-main);
+            background-color: var(--color-bg-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        .progress-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1002;
+            pointer-events: none;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: #CA8504;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* Animation Classes */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--color-bg-main);
+            border-bottom: var(--border-std);
+            padding: 0.75rem 1rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sticky-header .brand {
+            font-weight: 700;
+            color: var(--brown-950);
+            text-decoration: none;
+            border: var(--border-std);
+            padding: 0.25rem 0.75rem;
+            background: var(--color-button); 
+            transition: background 0.2s ease;
+        }
+
+        .sticky-header .brand:hover {
+            background: var(--brown-950);
+            color: var(--color-button);
+        }
+
+        .sticky-header .tagline {
+            color: var(--brown-800);
+            font-weight: 500;
+            display: none;
+        }
+
+        @media (min-width: 375px) {
+            .sticky-header .tagline {
+                display: block;
+                max-width: 50%;
+            }
+        }
+
+        /* Layout */
+        .container {
+            max-width: 440px; /* Mobile max-width */
+            margin: 0 auto;
+            padding: 0 8px; /* 8px padding side to side */
+            line-height: 24px;
+        }
+
+        main {
+            padding-top: 1rem; /* Reduced top padding */
+            padding-bottom: 2rem;
+        }
+
+        /* Reason Item Layout */
+        .reason-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            gap: 0.75rem; /* Reduced gap between visual and content on mobile */
+        }
+
+        .visual-placeholder {
+            width: 100%;
+            height: 400px;
+            margin: 0 auto 0.25rem auto; /* Very small bottom margin */
+            border: none;
+            background-color: transparent;
+            /* border-radius: 8px; Removed to fix blurry corners */
+            flex-shrink: 0;
+            order: 2; /* Move image to second position on mobile */
+            object-fit: contain;
+            display: block;
+        }
+        
+        .content-wrapper {
+            display: contents; /* Unbox children so they participate in reason-item flex layout */
+        }
+        
+        .content-wrapper h2 {
+            order: 1; /* Heading first on mobile */
+        }
+        
+        .content-wrapper p {
+            order: 3; /* Paragraphs after image on mobile */
+        }
+
+        /* Desktop Layout */
+        @media (min-width: 900px) {
+            .container {
+                max-width: 1000px;
+                padding: 0 1rem; /* Reset padding for desktop */
+            }
+
+            .byline {
+                justify-content: center;
+            }
+
+            .reason-item {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 3rem;
+            }
+
+            .visual-placeholder {
+                width: 360px;
+                height: 360px;
+                margin: 0; /* Left align on desktop */
+                order: 0; /* Reset order for desktop */
+            }
+            
+            .content-wrapper {
+                order: 0; /* Reset order for desktop */
+                display: block; /* Reset display for desktop */
+            }
+            
+            .content-wrapper h2, 
+            .content-wrapper p {
+                order: 0; /* Reset order for desktop */
+            }
+            
+            .reason-item h2 {
+                margin-top: 0;
+            }
+        }
+
+        /* Typography - Journalistic Style */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            color: var(--brown-950);
+            line-height: 1.5;
+            margin-bottom: 0.75rem; /* Reduced global heading bottom margin */
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 0.5rem; /* Reduced top margin */
+            padding-bottom: 0rem;
+            border-bottom: none;
+            margin-bottom: 0.5rem; /* Further reduced bottom margin */
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        /* List Numbers Styling (1., 2., 3., etc) */
+        h2 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            letter-spacing: -0.01em;
+            margin-top: 0; /* Let flex gap handle spacing */
+            margin-bottom: 0.25rem; /* Tight spacing to body text */
+            padding-top: 0;
+            border-top: none;
+            display: block;
+            width: 100%;
+            color: var(--brown-900);
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        /* Pseudo-element for large decorative number behind or beside */
+        /* Since copy is "1. The Bathroom...", we can't easily replace the text without JS or wrapping.
+           Visual trick: We style the first character using JS span wrapping or just typography 
+           Since I cannot change the copy, I will use a simple visual trick:
+           Make the H2 nice and big, and use a marker if it was a list item.
+           But here it is text content. I will leave it as styled text but enhance the surrounding whitespace. 
+        */
+
+        p {
+            margin-bottom: 0.75rem; /* Reduced paragraph spacing */
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--brown-800);
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        /* Drop Cap */
+        .drop-cap-p::first-letter {
+            float: left;
+            font-family: var(--font-serif);
+            font-size: 4.5rem;
+            line-height: 0.85;
+            padding-top: 0.1em;
+            padding-right: 0.15em;
+            color: var(--brown-950);
+            font-weight: 700;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--brown-950);
+            /* Animated highlighter effect */
+            background: linear-gradient(180deg, transparent 65%, var(--yellow-200) 65%);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.8s ease 0.2s;
+        }
+        
+        .is-visible strong {
+            background-size: 100% 100%;
+        }
+        
+        em {
+            font-style: italic;
+            color: var(--brown-900);
+            font-family: var(--font-serif);
+            position: relative;
+            padding: 0 4px;
+        }
+
+        /* Blockquote style */
+        blockquote {
+            background: var(--yellow-50);
+            border-left: 4px solid #CA8504;
+            padding: 1rem; /* Reduced padding */
+            margin: 1rem 0; /* Reduced margin */
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.4;
+            color: var(--brown-950);
+            position: relative;
+            font-style: italic;
+        }
+
+        /* Byline */
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 1rem; /* Reduced gap */
+            margin-bottom: 1rem; /* Reduced margin */
+            padding: 0.5rem 0; /* Reduced padding */
+            margin-top: 0.5rem; /* Reduced margin */
+        }
+
+        .author-info h4 {
+            font-family: var(--font-serif);
+            margin: 0;
+            font-size: 1rem;
+            text-transform: none;
+            font-weight: 700;
+            color: var(--brown-950);
+            letter-spacing: normal;
+        }
+
+        .author-credentials {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            color: var(--brown-800);
+            line-height: 1.5;
+            margin-top: 0rem;
+        }
+
+        /* Visuals & Patterns */
+        .visual-container {
+            margin: 1.5rem 0;
+            border: none;
+            background: #fff;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+        }
+        
+        /* CSS Patterns for placeholders */
+        .pattern-dots {
+            background-color: var(--yellow-50);
+            background-image: radial-gradient(var(--brown-800) 1px, transparent 1px);
+            background-size: 10px 10px;
+        }
+        
+        .pattern-lines {
+            background-color: #fff;
+            background-image: repeating-linear-gradient(45deg, var(--yellow-100) 0, var(--yellow-100) 1px, transparent 0, transparent 50%);
+            background-size: 10px 10px;
+        }
+        
+        .pattern-grid {
+            background-color: #fff;
+            background-image: linear-gradient(var(--yellow-200) 1px, transparent 1px), linear-gradient(90deg, var(--yellow-200) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .split-screen {
+            display: flex;
+            flex-direction: column;
+            min-height: 320px;
+        }
+
+        @media (min-width: 600px) {
+            .split-screen {
+                flex-direction: row;
+                min-height: 300px;
+            }
+        }
+
+        .split-half {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        @media (min-width: 600px) {
+            .split-half:first-child {
+                border-right: var(--border-std);
+            }
+        }
+        @media (max-width: 599px) {
+            .split-half:first-child {
+                border-bottom: var(--border-std);
+            }
+        }
+        
+        .bg-light { background: var(--yellow-50); }
+        .bg-dark { background: var(--brown-950); color: var(--yellow-25); }
+        .bg-accent { background: var(--yellow-100); } 
+        
+        .img-label {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 700;
+            color: inherit;
+            background: #fff;
+            padding: 4px 8px;
+            border: var(--border-std);
+            box-shadow: 2px 2px 0 var(--brown-950); /* Tiny hard shadow for labels only to pop */
+        }
+        
+        .bg-dark .img-label {
+            background: var(--brown-950);
+            color: var(--yellow-50);
+            border: 1px solid var(--yellow-50);
+            box-shadow: 2px 2px 0 var(--yellow-50);
+        }
+
+        /* Buttons */
+        .cta-wrapper {
+            margin: 1.5rem 0; /* Reduced margin */
+            text-align: center;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: var(--yellow-200);
+            color: var(--brown-900);
+            border: 1px solid var(--brown-900);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-transform: capitalize;
+            letter-spacing: normal;
+            transition: all 0.2s ease;
+            position: relative;
+            border-radius: 999px;
+            box-shadow: 3px 3px 0 var(--brown-900);
+            gap: 8px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 0 var(--brown-900);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: 1px 1px 0 var(--brown-900);
+        }
+        
+        .btn::after {
+            content: '→';
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        /* Content Boxes */
+        .biofilm-box {
+            background: #FEFBEC;
+            border: var(--border-std);
+            padding: 2rem 1.5rem; /* Reduced padding */
+            margin: 2rem 0; /* Reduced margin */
+            position: relative;
+            height: fit-content;
+            border-radius: 24px;
+        }
+
+        /* Desktop specific styling for box width */
+        @media (min-width: 900px) {
+            .biofilm-box {
+                max-width: 480px;
+                margin: 2rem auto;
+            }
+        }
+        
+        /* Removed offset border effect */
+        /* .biofilm-box::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: -6px;
+            bottom: -6px;
+            border: var(--border-std);
+            z-index: -1;
+            background: var(--yellow-50);
+        } */
+
+        .biofilm-box h3 {
+            font-size: 2rem;
+            border-bottom: var(--border-std);
+            padding-bottom: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .urgent-box {
+            background: #fff;
+            border: var(--border-std);
+            padding: 3rem;
+            margin: 5rem 0;
+            position: relative;
+            outline: 2px solid var(--brown-950);
+            outline-offset: 6px;
+        }
+        
+        .urgent-box h1 {
+            color: var(--brown-950);
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            border-bottom: var(--border-std);
+            padding-bottom: 1rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .urgent-box .btn {
+            background-color: var(--brown-950);
+            color: var(--yellow-25);
+            border: var(--border-std);
+        }
+        
+        /* Graph */
+        .graph-viz {
+            height: 280px;
+            background: #fff;
+            position: relative;
+            padding: 40px;
+            border-bottom: var(--border-std);
+        }
+        
+        .graph-label {
+            position: absolute;
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            padding: 6px 10px;
+            border: var(--border-std);
+            background: var(--yellow-25);
+            color: var(--brown-950);
+            z-index: 10;
+            font-weight: 700;
+        }
+        
+        /* SVG Animation */
+        .graph-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: stroke-dashoffset 1.5s ease-out;
+        }
+        
+        .is-visible .graph-line {
+            stroke-dashoffset: 0;
+        }
+
+        /* Utilities */
+        hr {
+            border: 0;
+            height: 0;
+            border-top: none;
+            margin: 2rem 0;
+            position: relative;
+            display: none;
+        }
+        
+        hr::after {
+            content: '♦';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--yellow-25);
+            padding: 0 1rem;
+            color: var(--brown-900);
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 2rem; /* Reduced margin top */
+            padding: 2rem 0; /* Reduced padding */
+            /* border-top: var(--border-std); Removed border */
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            color: var(--brown-800);
+            text-align: center;
+            background: var(--color-bg-main);
+            height: fit-content;
+        }
+        
+        footer p {
+            text-align: center;
+        }
+        
+        /* List Number Highlight Span (Dynamically added or just styling H2) */
+        h2 span.number-highlight {
+             font-size: 1.7rem;
+             color: #542C0D;
+             margin-right: 0.5rem;
+        }
+
+        /* Fixed Bottom Bar */
+        .fixed-bottom-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            border-top: var(--border-std);
+            padding: 12px 24px;
+            z-index: 1001;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 -4px 12px rgba(84, 44, 13, 0.1); /* Slight brown shadow */
+        }
+
+        .cta-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            gap: 1rem;
+        }
+
+        .cta-text {
+            font-family: var(--font-sans);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cta-title {
+            color: var(--brown-950);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+        }
+
+        .cta-subtitle {
+            color: var(--brown-800);
+            font-size: 0.75rem;
+            margin-top: 4px;
+        }
+
+        .cta-btn {
+            background-color: var(--yellow-200);
+            color: var(--brown-900);
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 0.95rem;
+            letter-spacing: normal;
+            white-space: nowrap;
+            border: 1px solid var(--brown-900);
+            transition: all 0.2s ease;
+            border-radius: 999px;
+            box-shadow: 3px 3px 0 var(--brown-900);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 4px 4px 0 var(--brown-900);
+            background-color: var(--yellow-200);
+            color: var(--brown-900);
+            border-color: var(--brown-900);
+        }
+
+        .cta-btn:active {
+            transform: translateY(2px);
+            box-shadow: 1px 1px 0 var(--brown-900);
+        }
+
+        /* Testimonials Gallery */
+        .testimonials-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 3rem 0;
+            width: 100%;
+        }
+
+        .review-card {
+            background: #fff;
+            border: var(--border-std);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 4px 4px 0 var(--yellow-200);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .review-stars {
+            color: #CA8504;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+
+        .review-text {
+            font-style: italic;
+            font-size: 0.95rem;
+            color: var(--brown-900);
+            line-height: 1.6;
+        }
+
+        .review-author {
+            font-weight: 700;
+            color: var(--brown-950);
+            font-family: var(--font-sans);
+            text-align: right;
+            font-size: 0.9rem;
+        }
+        
+        .desktop-only { display: flex; }
+        .mobile-only { display: none; }
+        
+        .pulsing-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #991b1b;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            animation: pulse-red 2s infinite;
+        }
+        
+        @keyframes pulse-red {
+            0% { transform: scale(0.95); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(0.95); opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            .fixed-bottom-cta {
+                padding: 12px 16px;
+            }
+            .cta-inner {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .desktop-only { display: none; }
+            .mobile-only { 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 2px;
+                text-align: center;
+            }
+            .cta-btn {
+                padding: 0.8rem 1.2rem;
+                font-size: 1rem;
+                width: 100%;
+                justify-content: center;
+                display: flex;
+            }
+            .mobile-guarantee {
+                font-size: 0.7rem;
+                color: var(--brown-800);
+                font-weight: 500;
+            }
+            .mobile-urgency {
+                font-size: 0.7rem;
+                color: #991b1b; /* Dark Red */
+                font-weight: 700;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.05em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="readingProgress" style="width: 0%;"></div>
+    </div>
+
+    <!-- Navbar removed -->
+
+    <main class="container">
+
+        <h1 class="reveal-on-scroll is-visible">5 Reasons Women With Copper IUDs Are Making this Switch</h1>
+
+        <div class="byline reveal-on-scroll is-visible">
+            <div style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden;">
+                <img src="../images/grace-mitchell.png" alt="Dr. Grace Mitchell" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="author-info">
+                <h4>By Dr. Grace Mitchell</h4>
+                <div class="author-credentials">Women's Intimate Health Specialist</div>
+            </div>
+        </div>
+
+        <blockquote class="reveal-on-scroll is-visible">
+            “If you have a copper IUD and now there's a smell that won't go away, thats not a hygiene problem. It's the copper killing off good bacteria.<br>
+            Here's why it's happening and what actually fixes it.”
+        </blockquote>
+
+        <!-- Point 1 -->
+        <div class="reason-item reveal-on-scroll is-visible">
+            <img src="../images/reason-1.png" class="visual-placeholder" alt="Diagram showing copper IUD releasing copper ions. Left side 'Healthy Vaginal Flora' shows Lactobacillus thriving. Right side 'After Copper Exposure' shows Lactobacillus dying off">
+            <div class="content-wrapper">
+                <h2>1. The Copper Is Killing Off The Bacteria That Keeps You Balanced</h2>
+                <p>Copper IUDs don't just prevent pregnancy, the copper ions continuously release into the vaginal environment and they kill off Lactobacillus, the beneficial bacteria that keep everything balanced.</p>
+                <p>When Lactobacillus dies off, pH rises and bad bacteria move in that's where the metallic, sour smell starts.</p>
+                <p>And no amount of showering fixes it because the problem isn't on the surface.</p>
+            </div>
+        </div>
+
+        <!-- Point 2 -->
+        <div class="reason-item reveal-on-scroll is-visible">
+            <img src="../images/reason-2-new.png" class="visual-placeholder" alt="Cross-section showing biofilm layer. Arrows showing 'Probiotics' 'ph wipes' and 'boric acid' bouncing off surface. Arrow showing 'Bromelain' penetrating through. Text: 'Standard treatments only clean the surface.'">
+            <div class="content-wrapper">
+                <h2>2. The Bad Bacteria Build A Layer Nothing Can Reach</h2>
+                <p>Once bad bacteria take over, they form a sticky protective layer called biofilm that hardens on the vaginal walls like plaque on teeth.</p>
+                <p>The odor-causing bacteria seal themselves underneath. Which is why standard probiotics, pH wipes, and boric acid suppositories only work for a day or two. Because they clean the surface but the bacteria underneath keep producing smell.</p>
+                <p>Nuora uses bromelain from pineapple stems, clinically shown to dissolve up to 93% of biofilm barriers. So that good bacteria can be introduced to colonize and restore balance.</p>
+            </div>
+        </div>
+
+        <!-- Point 3 -->
+        <div class="reason-item reveal-on-scroll is-visible">
+            <img src="../images/reason-3-new.png" class="visual-placeholder" alt="'Nuora's Bacillus Coagulans' shows spore-forming bacteria with protective shell with stomach acid and copper ions bouncing off it.">
+            <div class="content-wrapper">
+                <h2>3. A Probiotic That Actually Survives</h2>
+                <p>However even if a probiotic survives stomach acid, the copper ions kill it before it can colonize and it's back to square one.</p>
+                <p>But unlike standard Lactobacillus strains, Nuora uses Bacillus Coagulans, a spore-forming strain with a natural protective shell. It's clinically proven to survive both stomach acid AND resists copper ions, allowing it to colonize and restore heathy flora balance.</p>
+            </div>
+        </div>
+
+        <!-- Point 4 -->
+        <div class="reason-item reveal-on-scroll is-visible">
+            <img src="../images/reason-4-new.png" class="visual-placeholder" alt="Timeline. Day 1-7: 'Biofilm breaking down.' Day 5-9: 'Smell noticeably gone.' Week 3+: 'Balance restored.' Month 2+: 'Sustained results with IUD still in.' Contrast bar showing recurring pattern vs Nuora flat line.">
+            <div class="content-wrapper">
+                <h2>4. Noticeable Results in 5-9 Days That Actually Last</h2>
+                <p>Most women notice the smell disappearing between day 5 and day 9 when taking Nuora, as it breaks the biofilm and restores healthy bacteria that can survive copper ions.</p>
+                <p>And because Nuora addresses the root cause, smell doesn't come back like with probiotics or boric acid.</p>
+                <p>So women report sustained results, even with the IUD still in place.</p>
+            </div>
+        </div>
+
+        <!-- Point 5 -->
+        <div class="reason-item reveal-on-scroll is-visible">
+            <img src="../images/reason-5.png" class="visual-placeholder" alt="Gold '60-Day Money Back Guarantee' seal. Review cards from women mentioning copper IUD, smell gone, partner noticing difference.">
+            <div class="content-wrapper">
+                <h2>5. 60-Day Risk-Free Guarantee</h2>
+                <p>You got the copper IUD to liberate you and your partner, not to spend months wondering if anyone else can smell what you smell.</p>
+                <p>So try Nuora for 60 days and if the smell doesn't disappear for good, send back the empty bag for a full refund. No questions asked.</p>
+                <p>Join the 70,000 women that stopped the smell with Nuora.</p>
+            </div>
+        </div>
+
+
+        <!-- Closing / CTA -->
+        <div class="biofilm-box reveal-on-scroll is-visible">
+            <h3>Ready to Stop the Cycle?</h3>
+            <div class="cta-wrapper">
+                <a href="https://mynuora.com/products/feminine-balance-gummies-1" class="btn">Try Nuora Risk-Free for 60 days</a>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials-gallery reveal-on-scroll">
+            
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"I got my copper IUD because I was done with hormones. Thought it would be freeing. But maybe 3 months in I started noticing this sour, metallic smell that wasn't there before. I showered every morning and sometimes again before bed if I thought we might have sex. Tried probiotics from Target, boric acid, those pH wipes. Nothing worked longer than a day. Found Nuora after googling at 2am why copper IUDs cause odor. By day 8 I realized I hadn't smelled anything in a couple days. That was 4 months ago."</div>
+                <div class="review-author">— Melissa, 34</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"My husband and I went from having sex 3-4 times a week to barely once a month after I got the IUD. He never said anything directly but I noticed he stopped going down on me. He'd kiss my thighs and then just come back up. Every time. When I finally asked he said it smelled different. Not bad, just different. But I knew what he meant because I'd been smelling it too. Started Nuora and around day 10 he went down without me even showering first. We're back to 2-3 times a week now and he actually initiates again."</div>
+                <div class="review-author">— Rachel, 29</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"I was ready to have the IUD removed even though I loved not being on hormones. The smell was affecting everything. I'd be in meetings wondering if anyone else could smell what I was smelling. I stopped wearing tight pants. Stopped going to the gym. My doctor said it was normal and to try boric acid. Did that for 6 months and it just kept coming back. Nuora actually explains why—the copper kills the good bacteria and the bad bacteria hide under this biofilm layer. Once I understood that it made sense why nothing else worked. Took about 11 days but the smell is gone and hasn't come back in 3 months."</div>
+                <div class="review-author">— Jasmine, 37</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"The worst part was my husband knew and didn't know how to tell me. We'd both just been pretending everything was fine while barely touching each other. After I started Nuora and things cleared up, he told me he'd been smelling it the whole time but didn't want to hurt me. We'd wasted almost a year being distant over something neither of us knew how to talk about. I wish I'd found this sooner."</div>
+                <div class="review-author">— Taylor, 31</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"I tried everything the internet told me to try. Apple cider vinegar baths. Probiotics. Boric acid. Cotton underwear only. Sleeping without underwear. Cutting sugar. Nothing made a difference for more than a day or two. The only thing that actually worked was finding out the copper kills lactobacillus and you need a probiotic that can survive it. Nuora uses one with a protective shell so it doesn't die before it gets there. Smell was gone by day 9. Still have my IUD. Finally feel like myself again."</div>
+                <div class="review-author">— Amanda, 38</div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="reveal-on-scroll is-visible">
+            <p>© 2025 Nuora.</p>
+        </footer>
+
+    </main>
+
+    <div class="fixed-bottom-cta">
+        <div class="cta-inner">
+            <div class="cta-text desktop-only">
+                <span class="cta-title">Try Nuora Risk-Free</span>
+                <span class="cta-subtitle">60-Day Money Back Guarantee</span>
+            </div>
+            
+            <a href="https://mynuora.com/products/feminine-balance-gummies-1" class="cta-btn">Try Nuora Risk-Free for 60 days</a>
+            
+            <div class="mobile-only">
+                <div class="mobile-guarantee">60-Day Money Back Guarantee</div>
+                <div class="mobile-urgency">
+                    <span class="pulsing-dot"></span> Limited Stocks
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('readingProgress').style.width = scrollPercent + '%';
+        });
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const elements = document.querySelectorAll('.reveal-on-scroll');
+            elements.forEach(el => observer.observe(el));
+            
+            // Script to wrap numbers in H2s for styling (Visual only, no content change)
+            document.querySelectorAll('h2').forEach(h2 => {
+               const text = h2.innerText;
+               const match = text.match(/^(\d+\.)\s+(.*)/);
+               if (match) {
+                   // Wrap the number in a span for styling
+                   h2.innerHTML = `<span class="number-highlight">${match[1]}</span> ${match[2]}`;
+               }
+            });
+        });
+    </script>
+
+
+
+</body></html>
